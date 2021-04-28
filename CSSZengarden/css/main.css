@@ -1,0 +1,399 @@
+body {
+  margin: 0;
+
+  background: #6895ab;
+}
+
+p,
+h1,
+h2,
+h3,
+a {
+  font: italic normal 1.1em georgia, sans-serif;
+}
+
+p {
+  line-height: 1.5;
+}
+
+header h1 {
+  font: 75% georgia, sans-serif;
+  font-size: 30px;
+  background: #0d2c40;
+  box-sizing: border-box;
+  width: 40%;
+  padding: 1em 1%;
+  font-weight: bold;
+  margin-top: 0;
+  color: white;
+  transition: font-size 1s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+header h1:hover {
+  font-size: 45px;
+}
+
+header h2 {
+  font-weight: bolder;
+  font-size: 40px;
+  z-index: 3;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 55px;
+}
+
+.summary {
+  background: #2a4654;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.summary p,
+.summary a {
+  color: white;
+}
+
+.summary a:hover {
+  color: black;
+}
+
+@keyframes sun {
+  from {
+    background-position-x: 0%;
+  }
+  to {
+    background-position-x: 100%;
+  }
+}
+
+.preamble {
+  border-right: 2px solid white;
+  max-width: 75%;
+  background: url("../imgs/sun.svg") no-repeat center;
+  background-size: contain;
+  animation-name: sun;
+  animation-timing-function: ease-in-out;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: white;
+  margin-top: 25px;
+}
+
+.preamble p {
+  margin: 0.7em;
+}
+
+#zen-supporting {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c c"
+    "d d"
+    "e e";
+}
+
+.main .explanation {
+  background: #0d2c40;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 8px 0px;
+  grid-area: a;
+}
+
+.explanation p,
+.participation p {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.participation {
+  background: #2a4654;
+  color: white;
+  width: 100%;
+  padding: 8px 0px;
+  grid-area: b;
+  height: 100%;
+}
+
+.participation p a {
+  text-decoration: underline;
+  color: white;
+}
+
+.participation p a:hover {
+  color: black;
+}
+
+.benefits {
+  background-color: #0d2c40;
+  text-align: right;
+  padding: 1% 0;
+  margin: 2em 0;
+  position: relative;
+  color: white;
+  grid-area: c;
+  width: 100%;
+}
+
+.benefits h3 {
+  font-weight: bold;
+  position: absolute;
+  transform: rotate(270deg);
+  top: 30%;
+}
+
+.benefits p {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.participation h3,
+.explanation h3,
+.requirements h3,
+.preamble h3 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.requirements {
+  background: #2a4654;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  color: white;
+  padding: 3px 0;
+  text-align: center;
+  grid-area: d;
+}
+
+.requirements p {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.design-selection nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 99%;
+}
+
+.design-selection nav ul li,
+.zen-resources ul li {
+  background-color: #0d2c40;
+  border: 2px solid black;
+  width: 22%;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 5px 0;
+}
+
+.design-archives ul {
+  display: flex;
+  padding: 0;
+  margin: auto;
+  width: 99%;
+}
+
+.design-archives ul li {
+  display: inline-block;
+  border: 2px solid black;
+  background-color: #0d2c40;
+  width: 50%;
+  height: 100%;
+  padding: 50px;
+  text-align: center;
+}
+.design-archives ul li:first-child {
+  margin-right: 2px;
+}
+
+.design-selection nav ul li {
+  color: #6895ab;
+}
+.design-archives ul li a,
+.design-selection nav ul li a,
+.zen-resources ul li a,
+.requirements p a,
+footer a {
+  color: white;
+}
+
+.design-archives ul li a:hover,
+.design-selection nav ul li a:hover,
+.zen-resources ul li a:hover,
+.requirements p a:hover,
+footer a:hover {
+  color: black;
+}
+
+.zen-resources ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-content: center;
+  justify-content: space-between;
+  width: 99%;
+  margin: auto;
+}
+
+.zen-resources ul li {
+  width: 15%;
+  margin-bottom: 0.5em;
+}
+
+h3.archives,
+h3.resources,
+h3.select {
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 0.7em;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #0d2c40;
+  padding: 4px 0;
+  margin-top: 1%;
+  grid-area: e;
+}
+footer .zen-validate-html::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f13b";
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  margin-right: 2px;
+}
+footer .zen-validate-css::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f13c";
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  margin-right: 2px;
+}
+footer .zen-license::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f2c2";
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  margin-right: 2px;
+}
+footer .zen-github::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09b";
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  margin-right: 2px;
+}
+footer .zen-accessibility::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f368";
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  margin-right: 2px;
+}
+
+footer a {
+  margin-right: 7px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  #zen-supporting {
+    grid-template-areas:
+      "a a"
+      "b b"
+      "c c"
+      "d d"
+      "e e";
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  header h1:hover {
+    font-size: 30px;
+  }
+  .preamble {
+    background: none;
+    color: white;
+    margin: auto;
+    border: none;
+    width: 100%;
+    text-align: center;
+  }
+  .preamble p {
+    width: 95%;
+  }
+  .preamble h3 {
+    font-size: 1.3em;
+    font-weight: bolder;
+  }
+  .explanation,
+  .participation {
+    padding-bottom: 1em;
+  }
+  .explanation p,
+  .participation p {
+    width: 95%;
+  }
+  .benefits {
+    margin: 0;
+    padding-bottom: 1em;
+  }
+  .benefits p {
+    width: 95%;
+  }
+  .benefits h3 {
+    position: static;
+    transform: none;
+    text-align: center;
+  }
+  .requirements {
+    padding-bottom: 1em;
+  }
+  .requirements p {
+    width: 95%;
+  }
+
+  .design-selection nav ul li {
+    width: 48%;
+  }
+  .design-archives ul,
+  .zen-resources ul {
+    flex-wrap: wrap;
+  }
+  .design-archives ul li,
+  .zen-resources ul li {
+    width: 100%;
+  }
+  .design-archives ul li {
+    margin-bottom: 0.6em;
+  }
+  .design-archives ul li:first-child {
+    margin-right: 0;
+  }
+  footer {
+    margin: 0;
+  }
+}

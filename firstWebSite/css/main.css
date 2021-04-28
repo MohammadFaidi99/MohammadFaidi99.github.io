@@ -1,0 +1,555 @@
+/*
+FirstColor: #08526d
+SecondColor:#ec1c23
+*/
+
+/* Start Upper Bar */
+
+.upper-bar   {
+   background-color:#5C246E;
+   padding: 5px;
+   color:#fff;      
+}
+.upper-bar a{
+   color:#fff;
+
+}
+/* .upper-bar .click-here:hover{
+  color:#87006a !important;
+
+} */
+
+
+.upper-bar .click-here {
+display: inline-block;
+border: 1px solid #003F87;
+border-width: medium;
+padding: 2px 10px;
+margin-left: 20px;
+cursor:pointer;
+
+}
+
+/* .navbar-nav .nav-item{
+margin-left: 20px;
+} */
+
+.container .navbar-brand{
+font-style: italic;
+font-weight: bold;
+
+}
+ .navbar-nav .active > .nav-link {
+   color:#5C246E !important;
+}
+
+.nav-item > .nav-link {
+font-size: 15px;
+text-transform: uppercase ;
+font-weight: bold;
+margin-left: 30px;
+
+} 
+/* another way of showing the pictures on the slider while omitting the image element from the html file in the carousel-item,
+as well as adding the carousel-item class to the function in the javascript file for its height*/
+
+/*.sliderr .carousel-item{
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+
+}
+ .carousel-inner .item1{
+  
+   background-image: url("/images/138781.jpg");
+
+}
+.carousel-inner .item2{
+   background-image: url("/images/173188-animals-birds-kingfisher-low_poly-geometry-digital_art-artwork-simple_background.jpg");
+
+}
+.carousel-inner .item3{
+   background-image: url("/images/iu-celebrity-edam-entertainment@2000x1270.jpg");
+
+} */
+
+
+.sliderr .overlay {
+   position:absolute;
+   left:0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.6);
+   z-index: 2;
+
+}
+.sliderr .carousel-indicators li{
+height:8px;
+cursor:pointer;
+border-radius:70%;
+
+}
+.sliderr .carousel-inner{
+   display: flex;
+   justify-content: left;
+   align-items: center;
+
+}
+.sliderr .carousel-inner h1{
+position:absolute;
+color:white;
+max-width: 500px;
+z-index: 3;
+left:100px;
+line-height: 1.5;
+font-size: 40px;
+
+}
+.sliderr .carousel-inner h1 span:first-child{
+   display:inline-block;
+   background-color: green;
+   padding:0.5px 5px;
+}
+
+.sliderr .carousel-inner h1 span:last-child{
+   display:inline-block;
+   background-color:#ec1c23;
+   padding: 0.5px 5px;
+}
+
+.features{
+   padding: 60px 0;
+}
+.features h3{
+color:#5C246E;
+font-size: 20px;
+}
+
+body{
+   height:9000px;
+
+}
+.features p{
+   color:rgb(100, 99, 99);
+   font-size:15px;
+   margin-bottom:10px;
+
+}
+.features i{
+   background-color: #404040;
+   color:cornflowerblue;
+   padding:15px;
+   margin-bottom: 10px;
+   
+}
+.overview{
+background-color: #6c757d;
+padding:80px;
+}
+ .overview h1{
+   margin-bottom: 25px;
+   /* font-weight:bold;  we can either put it here or in the h1 as specified in the html file*/
+   text-transform:uppercase;
+   color:#ddd;
+}
+
+ .overview p  {
+   line-height:1.5;
+    max-width:80%;
+    margin:0 auto 15px;
+    color:#ddd;
+ }
+ .overview h4{
+   font-size:20px;
+   font-weight:normal;
+   color:#ddd;
+   margin-bottom: 30px;
+   letter-spacing: 1px;
+}
+ 
+ .overview button{
+   color:#ddd;
+   background-color:#5C246E;
+   border-color: #5C246E;
+   padding:5px 25px;
+   font-size:20px;
+   letter-spacing: 1px;
+   margin-top:20px;  
+   cursor:pointer;
+ }
+
+
+ .featured-work h1{
+   padding:30px 0;
+   font-weight: bold;
+ }
+ 
+ .featured-work p{
+   line-height:2;
+   width:70%;
+   margin:0px auto 40px;   
+   color:#6c757d;
+
+ }
+ .featured-work ul{
+   margin-bottom: 100px;
+
+
+ }
+
+ .featured-work ul li{
+   border:2px solid #5C246E;
+   padding:4px 1px;
+   margin-left: 4px;
+   font-weight:bold;
+   letter-spacing: 3px;
+   color:#5C246E;
+   -webkit-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+   
+  
+
+
+ }
+
+ .featured-work ul li.active,.featured-work ul li:hover{
+   color:#6c757d;
+   background-color:#5C246E;
+ }
+
+ .featured-work ul li:hover{
+ cursor:pointer;
+ 
+ }
+
+ .shuffled-images .row .col-md{
+   padding:0;
+
+
+ }
+.shuffled-images .row{
+   margin:0;
+}
+ .shuffled-images .row .col-md img{
+   width: 100%;
+
+ }
+
+.latest-posts{
+   padding:60px;
+
+}
+
+ .latest-posts h1{
+    font-weight: bold;
+    
+ }
+
+ .latest-posts .card-para {
+   color:#6c757d;
+   width:80%;
+   margin:30px auto 70px;
+   line-height:2;
+
+ }
+ .latest-posts .card {
+    margin-bottom: 40px;
+ }
+
+ .latest-posts .row .card .card-title, .latest-posts .card .card-link{
+    color:#5C246E;
+ }
+ .latest-posts .card-body p{
+   color:#6c757d;
+
+ }
+ .profile {
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-image: url("/images/workbg.jpg");
+   position:relative;
+ }
+ 
+ .profile .overlay{
+   position:absolute;
+   left:0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0,0.6);
+   z-index:2;
+
+ }
+ .profile .container{
+   position:relative; 
+   z-index:3;
+  
+ }
+
+ .profile .carousel-inner .carousel-item .carousel-caption{
+   margin-top:219px;
+ } 
+
+ /* .profile .carousel-inner .carousel-item .carousel-caption img{
+   left:;
+   
+ } */
+ .profile .carousel-caption h3{
+    margin-top:5px;
+ }
+ .profile .carousel-caption h3 +span{
+   display:inline-block;
+   font-size:18px;
+   margin-bottom :30px;
+ }
+
+ .profile .carousel-indicators li {
+   height:8px;
+   cursor:pointer;
+   border-radius:70%;
+ }
+ .profile .carousel-control-prev, .profile .carousel-control-next{
+    z-index:5;
+ }
+
+ .pricing-table{
+   padding:70px 0 100px;
+   background-color:#e4e4e4;
+
+ }
+ 
+ .pricing-table h1{
+   font-weight: bold;
+   margin-bottom: 30px;
+  
+
+ }
+ .pricing-table .pricing-description {
+    margin:0 auto 70px;
+    line-height:2;
+    width:80%;
+    color:#6c757d;
+ }
+
+ .pricing-table .card-title {
+   color:#5C246E;
+   font-size:20px;
+   margin-top:20px;
+
+ }
+
+ .pricing-table ul .list-group-item{
+   border: none;
+   color:#6c757d;
+ }
+.pricing-table .card-body{
+   padding:0;
+
+}
+.pricing-table .card-body .card-subtitle{
+  margin-bottom:20px;
+
+}
+
+ .pricing-table .premium.card{
+margin-bottom:50px;
+
+} 
+
+
+.pricing-table p>span {
+   color:#f7f7f7;
+   font-size:15px;
+   font-weight: bold;
+}
+.pricing-table .premspan{
+   color:#5C246E;
+
+}
+.pricing-table .col-md-4 .card-text {
+   color:#f7f7f7;
+   font-size:45px;
+   font-weight: bold;
+   display:block;
+   background-color: #5C246E;
+   padding:5px;
+   margin:10px 0 20px;
+}
+
+
+ .pricing-table .card-body .card-link{
+    display:inline-block;
+    background-color:#f0f0f0;
+    padding:10px 30px;
+    color:#5C246E;
+    letter-spacing: 1px;
+    margin-bottom:30px;
+    font-weight:bold;
+   }
+
+   .pricing-table .card.premium .card-text{
+      font-size:45px;
+      color:#5C246E;
+      font-weight: bold;
+      display:block;
+      background-color:#f7f7f7;
+   }
+   .pricing-table .card.premium {
+      position:relative;
+      top:25px;
+   }
+   
+ .pricing-table .card.premium .card-link{
+   display:inline-block;
+   background-color:#5C246E;
+   padding:10px 30px;
+   color:#f7f7f7;
+   letter-spacing: 1px;
+   margin-bottom:30px;
+   font-weight:bold;
+ }
+ 
+ /* we can either use max-width=100% for the image (pixilates the image) or give a property to the colomn where the image is called overflow:hidden 
+ where the rest of the image is hidden and does not go out of the colomn bounds (does not change resolution) it depends on what
+ we want and whichever one suits best */
+ .choose-us img{              
+   max-width: 100%;
+ }
+ .choose-us .col-6{
+   padding:0;
+ }
+ .choose-us .col-6:last-child{
+   background-color:#6c757d;
+ }
+ .choose-us h1{
+    margin:30px;
+    font-weight: bold;
+    color:#5C246E;
+
+ }
+ .choose-us p{
+    line-height:2;
+    margin:30px;
+    color:#f7f7f7;
+ }
+ .choose-us .read-more{
+   display:inline-block;
+   padding:7px 15px;
+   background-color:#5C246E;
+   margin:0 30px 20px;
+   color:#f7f7f7;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+
+ }
+
+ .stats {
+   padding:100px 0;
+
+ }
+ .stats i{
+   color:#404040;
+
+ }
+.stats .number{
+   display:block;
+   color:#404040;
+   font-weight:bold;
+   font-size:25px;
+}
+.stats p {
+   font-style: italic;
+   color:#5C246E;
+   font-weight:bold;
+}
+.donate {
+   background-color:#5C246E;
+   padding:60px;
+}
+.donate p{
+   margin:0;
+   color:#f7f7f7;
+   font-size:20px;
+}
+
+.donate a{
+color:#f7f7f7;
+border: 2px solid #f7f7f7;
+padding: 7px 10px;
+text-transform:uppercase;
+letter-spacing: 1.5px;
+font-size:20px;
+
+}
+
+.footer{
+   padding:70px 0;
+}
+.footer .site-info #title {
+   margin-bottom:20px;
+
+}
+.footer .site-info h2 span:first-child{
+   color:#5C246E;
+   font-size:30px;
+   font-weight:bold;
+}
+
+.footer .site-info h2 span:last-child{
+   color:#6c757d;
+   font-size:25px;
+}
+.footer .site-info p {
+   line-height:1.5;
+   color:#404040;
+}
+
+.footer .site-info a{
+   font-weight:bold;
+   color:#5C246E;
+   font-size: 12px;
+   
+}
+
+.footer .site-info a::before{
+font-family: 'Font Awesome 5 Free';
+content:"\f138";
+display:inline-block;
+margin-right:5px;
+}
+
+.footer .links h2, .footer .contact h2 {
+font-size:20px;
+color:#5C246E;
+margin-bottom:35px;
+
+}
+
+
+
+.footer .links ul li a {
+   color:#5C246E;
+}
+
+.footer .links ul li::before{
+   margin-right:5px;
+   font-family: 'Font Awesome 5 Free';
+   content:"\f138";
+   display:inline-block;
+   position:relative;
+   }
+
+ .footer .links ul li{
+   margin-bottom:15px;
+
+}
+.footer .contact ul li {
+   margin-bottom:15px;
+
+}

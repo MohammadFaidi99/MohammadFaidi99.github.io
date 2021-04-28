@@ -1,0 +1,53 @@
+/* HoneyFlower Purple: #5C246E 
+  Raven Gray: #6c757d 
+  Congress Blue: #003F87 
+  gold: #FFAC00
+    */
+
+ 
+   #skills-table td, #skills-table tr{
+    border: 3px solid #5c246E;
+  }
+  #skills-table th{
+    border: 3px solid black;
+  } 
+  #skills-table{
+    margin-bottom:20px;
+  }
+ #div2, #div1  {
+  margin-bottom:20px;
+  background-color:#989ea3;
+  padding:10px;
+  border:2px outset black;
+}
+#div2 #skills-table{
+  position:relative;
+  bottom:140px;
+}
+
+
+#div2 ul{
+left:330px;
+position: relative;
+bottom:10px;
+
+}
+#div2 .skills{
+position:relative;
+left:350px;
+font-weight:bold;
+color:#5c246E;
+
+}
+
+ #div3{
+  background-color:#989ea3 ;
+  padding:10px;
+  border:2px outset black;
+
+} 
+
+div a img{
+border: 3px solid #6c757d;
+
+}
