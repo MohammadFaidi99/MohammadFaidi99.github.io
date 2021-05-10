@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Your Pizza</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Customize your own Pizza </h1>
+    <p>Choose your favorite size:</p>
+    <div id="size">
+      <input type="radio" id="normal" name="psize" value="5" checked oninput="pizza()">
+      <label for="normal">Normal (26cm, 5 Euro)</label><br>
+      <input type="radio" id="large" name="psize" value="6.5" oninput="pizza()">
+      <label for="large">Maxi (32cm, 6.50 Euro)</label><br>
+    </div>
+    <p>Choose your preferred toppings: </p>
+    <div id="toppings">
+      <input type="checkbox" id="cheese" name="top" value="1.5" onchange="price()">
+      <label for="cheese">Cheese</label>
+      <input type="checkbox" id="salami" name="top" value="1.5" onchange="price()">
+      <label for="salami">Salami</label>
+      <input type="checkbox" id="spinach" name="top" value="1" onchange="price()">
+      <label for="spinach">Spinach</label>
+      <input type="checkbox" id="ananas" name="top" value="1" onchange="price()">
+      <label for="ananas">Ananas</label>
+      <input type="checkbox" id="olives" name="top" value="1" onchange="price()">
+      <label for="olives">Olives</label>
+    </div>
+    <p>Your Free Toppings:</p>
+    <div class="free">
+      <input type="checkbox" id="Garlic" name="Garlic" value="Free" onchange="price()">
+      <label for="Garlic">Garlic</label>
+    </div>
+    <form name="pizzaform" onsubmit="return submitbut()" required>
+      <label for="address">Delivery Address:</label>
+      <input type="text" id="address" name="addressfield"> <br>
+      <button id="but" onclick="order()">Checkout</button>
+
+    </form>
+  </div>
+
+
+</body>
+<footer><a href="https://www.freepik.com/photos/background">Background photo created by Racool_studio -
+    www.freepik.com</a> </footer>
+
+</html>

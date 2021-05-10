@@ -1,0 +1,87 @@
+/* the background-image is license-free (free to use) and is taken from freepik.com */
+body {
+  background-image: url(images/PizzaBackground.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: Himawari, sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+.container {
+  width: 40%;
+  margin-left: 50%;
+  margin-top: 10vh;
+  color: white;
+}
+.container h1:first-of-type {
+  font-family: Himawari;
+  text-align: left;
+  margin: auto;
+  font-size: 50px;
+  text-decoration: underline;
+}
+.container p {
+  font-size: 35px;
+}
+#size {
+  display: flex;
+  justify-content: space-between;
+}
+#addrbut {
+  margin-top: 3em;
+}
+#toppings + p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.free {
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
+}
+
+form {
+  position: relative;
+}
+form button {
+  margin-top: 1.5em;
+  padding: 1%;
+  position: absolute;
+  left: 50%;
+}
+footer {
+  float: right;
+  margin-top: 3em;
+}
+footer a {
+  color: white;
+}
+@font-face {
+  font-family: Himawari;
+  src: url("Fonts/Free\ Shine\ Himawari.otf");
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url(/images/PizzaBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  footer {
+    max-width: 50%;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  body {
+    background-image: url(/images/PizzaBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}

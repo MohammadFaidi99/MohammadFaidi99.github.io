@@ -1,0 +1,70 @@
+html {
+  overflow: scroll;
+}
+body {
+  background-color: rgb(96, 208, 206) !important;
+}
+.container {
+  background-color: white;
+  /* margin-top: 11em; */
+}
+
+.card {
+  margin: 0 auto 0;
+  border: none !important;
+}
+.card-body .row {
+  margin-left: auto;
+}
+.card .card-body input {
+  color: rgb(117, 119, 117);
+}
+#addbut {
+  color: white;
+  background-color: rgb(187, 146, 241);
+  border: none;
+  display: inline;
+  border-radius: 10%;
+  margin-left: 1%;
+}
+#addbut:hover {
+  background-color: rgb(142, 73, 232);
+}
+.container .card ul li {
+  background-color: rgb(242, 242, 242);
+  padding: 0.25em;
+  font-size: 0.75em;
+}
+
+#todolist li button {
+  border: none;
+  color: white;
+  background-color: rgb(231, 76, 60);
+  outline: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  visibility: hidden;
+}
+
+#todolist li:hover > button {
+  visibility: visible;
+}
+
+/* #todolist li:hover #todolist li button,
+#todolist li.hover #todolist li button {
+  display: block;
+  visibility: visible;
+} */
+.card-body p {
+  font-size: 0.75em;
+  display: inline;
+}
+
+#clearall {
+  background-color: rgb(142, 73, 232);
+  color: white;
+  position: absolute;
+  right: 0;
+}
