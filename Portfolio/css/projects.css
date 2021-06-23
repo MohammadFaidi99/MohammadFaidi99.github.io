@@ -1,0 +1,123 @@
+/* Projects HTMl File */
+:root {
+  --mpurple: #5c246e;
+  --mgray: #6c757d;
+  --mblue: #003f87;
+  --mcolor: #5ca19f;
+}
+body {
+  overflow-x: hidden;
+}
+/* Used Font */
+@font-face {
+  font-family: "roboto_slabregular";
+  src: url("../Fonts/robotoslab-regular-webfont.eot");
+  src: url("../Fonts/robotoslab-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Fonts/robotoslab-regular-webfont.woff2") format("woff2"),
+    url("../Fonts/robotoslab-regular-webfont.woff") format("woff"),
+    url("../Fonts/robotoslab-regular-webfont.ttf") format("truetype"),
+    url("../Fonts/robotoslab-regular-webfont.svg#roboto_slabregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+p,
+h1,
+h2,
+a,
+li,
+span {
+  font-family: "roboto_slabregular";
+}
+/* beginning of navbar  */
+.container .navbar-brand {
+  font-style: italic;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.navbar-nav a.active {
+  color: var(--mcolor) !important;
+}
+.navbar-nav > a:hover,
+.container .navbar-brand:hover {
+  color: white !important;
+}
+
+.navbar {
+  border-bottom: 0.1px solid white;
+}
+
+.nav-item > .nav-link {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 1.2em;
+}
+/* ending of navbar */
+.projects {
+  background-color: #6c757d;
+  color: white;
+  padding: 1% 0 1%;
+}
+.projects ul {
+  list-style-type: none;
+}
+.projects ul > li::before {
+  content: "•";
+  color: var(--mcolor);
+  display: inline-block;
+  width: 1em;
+}
+.projectdetails {
+  background-color: var(--mcolor);
+}
+.accordion-body {
+  height: 50vh;
+}
+#riscaccordion,
+#bankaccordion,
+#todoaccordion,
+#covidaccordion {
+  padding: 0.8%;
+  border-bottom: 2px solid var(--mgray);
+}
+#riscaccordion button,
+#bankaccordion button,
+#todoaccordion button,
+#covidaccordion button {
+  color: white;
+  background-color: #6c757d;
+  margin-left: 2%;
+  padding: 0.25em;
+  text-align: center;
+}
+#riscaccordion button:hover,
+#bankaccordion button:hover,
+#todoaccordion button:hover,
+#covidaccordion button:hover {
+  color: var(--mcolor);
+}
+#riscbody p,
+#bankbody p,
+#todobody p,
+#covidbody p {
+  color: white;
+}
+#bankbody li {
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes colorchange {
+  to {
+    background-color: black;
+  }
+}

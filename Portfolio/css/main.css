@@ -1,0 +1,147 @@
+/* i have used Bootstrap 4.6 */
+
+:root {
+  --mpurple: #5c246e;
+  --mgray: #6c757d;
+  --mcolor: #5ca19f;
+}
+
+/* Used Font */
+@font-face {
+  font-family: "roboto_slabregular";
+  src: url("../Fonts/robotoslab-regular-webfont.eot");
+  src: url("../Fonts/robotoslab-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../Fonts/robotoslab-regular-webfont.woff2") format("woff2"),
+    url("../Fonts/robotoslab-regular-webfont.woff") format("woff"),
+    url("../Fonts/robotoslab-regular-webfont.ttf") format("truetype"),
+    url("../Fonts/robotoslab-regular-webfont.svg#roboto_slabregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  overflow-x: hidden;
+}
+p,
+h2,
+a,
+span {
+  font-family: "roboto_slabregular";
+}
+
+.container .navbar-brand {
+  font-style: italic;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+#mainnav a.active {
+  color: var(--mcolor) !important;
+}
+.navbar-nav > a:hover,
+.container .navbar-brand:hover {
+  color: white !important;
+}
+
+.nav-item > .nav-link {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 1.2em;
+}
+.navbar {
+  border-bottom: 0.1px solid white;
+}
+.profile {
+  background-color: var(--mcolor);
+  height: auto;
+  padding-bottom: 1em;
+}
+.profile img {
+  width: 25vh;
+  height: 25.5vh;
+  z-index: 3;
+}
+.profile p {
+  color: white;
+  max-width: 70%;
+  margin: auto;
+  height: auto;
+}
+.profile .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.toknowbar,
+.educationbar,
+.skillsbar {
+  background-color: var(--mgray);
+  padding: 1em;
+  color: white;
+  font-size: 1.1em;
+}
+#knowmeslider {
+  background-color: var(--mcolor);
+  color: white;
+}
+#knowmeslider .carousel-item {
+  height: 44vh;
+}
+#knowmeslider .carousel-indicators li {
+  height: 8px;
+  cursor: pointer;
+  border-radius: 0%;
+  background-color: var(--mgray);
+}
+.progress-bar {
+  background-image: linear-gradient(
+    to left,
+    var(--mpurple),
+    var(--mgray)
+  ) !important;
+}
+.animateme {
+  animation: bar linear 2s !important;
+}
+.skills {
+  background-color: #5ca19f;
+}
+
+.education {
+  background-color: var(--mgray);
+}
+.education .row {
+  margin-left: 10%;
+}
+.education img {
+  display: inline;
+  width: 40%;
+  height: 80%;
+}
+.education img + p {
+  color: white;
+  font-weight: bold;
+  font-size: 0.9em;
+  max-width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 1%;
+}
+.line {
+  border-right: 2px solid var(--mcolor);
+}
+
+@keyframes bar {
+  0% {
+    width: 0%;
+  }
+  65% {
+    width: 65%;
+  }
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- beginning of navigation bar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-secondary ">
+    <div class="container">
+      <a class="navbar-brand" href="https://github.com/MohammadFaidi99/MohammadFaidi99.github.io">MF</a>
+      <button class="navbar-toggler text-left" type=" button" data-target="#mainnav" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainnav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">About me</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ending of navigation bar -->
+  <!-- start of projects mentioning -->
+  <div class="projects">
+    <div class="container">
+      <h3 class=>Projects</h3>
+      <div class="row">
+        <div class="col">
+          <ul>
+            <li>Risc Processor</li>
+            <li>Banking System</li>
+            <li>COVID19 Classifier</li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li>To-do List website</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="projectdetails">
+    <!-- start of first accordion -->
+    <div class="accordion accordion-flush">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="riscaccordion">
+          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#accordion1">Simple Risc
+            Processor</button>
+        </h2>
+        <div class="accordion-collapse collapse" id="accordion1">
+          <div class="accordion-body" id="riscbody">
+            <div class="row p-4">
+              <div class="col-sm-12 col-md ml-3">
+                <p>The Reduced Instruction Set Computer or RISC as we know it, is a type of microprocessor architecture
+                  that utilizes a small, highly optimized set of instructions. In this paper the design of an 8-Bit Risc
+                  Processor is proposed. The design is implemented on a Nexys 4 DDR board, the purpose is to make the
+                  board act as a microprocessor and let it execute a specific given program and display the program’s
+                  output on the seven-segment display on the board.
+                  The implemented Risc processor has four stages that the instruction goes through when executing a
+                  program which are, Fetch, Decode, Execute and Write back.</p>
+              </div>
+              <div class="col-sm-12 col-md text-center">
+                <img src="images/Risc Processor.jpg" alt="Simple Risc Processor Datapath">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of first accordion item  -->
+    <!-- start of second accordion -->
+    <div class="accordion accordion-flush">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="bankaccordion">
+          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#accordion2">Banking
+            System</button>
+        </h2>
+        <div class="accordion-collapse collapse" id="accordion2">
+          <div class="accordion-body" id="bankbody">
+            <div class="row p-4">
+              <div class="col-sm-12 col-md ml-3">
+                <p>This project implements a basic banking system with the necessary functions that are used the most
+                  by the clients of any bank.It uses a database (Sqlite3 library), tkinter library for the graphical
+                  user interface (GUI)</p>
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-dark">Open a new customer bank account.</li>
+                  <li class="list-group-item list-group-item-dark">Money withdrawal from an existing account.</li>
+                  <li class="list-group-item list-group-item-dark">Money deposit from an existing account.</li>
+                  <li class="list-group-item list-group-item-dark">Money transfer between two existing accounts.</li>
+                  <li class="list-group-item list-group-item-dark">Terminate an existing account </li>
+                </ul>
+              </div>
+              <div class="col-sm-12 col-md text-center">
+                <img src="images/bankingsystem.JPG" alt="Banking System GUI Screenshot" width=410px height=304px>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of second accordion item  -->
+    <!-- start of third accordion -->
+    <div class="accordion accordion-flush">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="todoaccordion">
+          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#accordion3">To Do List
+            website</button>
+        </h2>
+        <div class="accordion-collapse collapse" id="accordion3">
+          <div class="accordion-body" id="todobody">
+            <div class="row p-4">
+              <div class="col-sm-12 col-md ml-3">
+                <p class='mb-0'>The aim of this project is to implement a checklist website that saves the activities
+                  that are wanted
+                  to be completed during your day or in your life in general.
+                  After completing an intended task, it can be deleted using the delete button on top.</p>
+                <p>the saved items will not be lost upon closing the app as local storage is used to keep them stored.
+                </p>
+              </div>
+              <div class="col-sm-12 col-md text-center">
+                <img src="images/todoapp.JPG" alt="To do list app mobile screenshot">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of third accordion -->
+    <!-- start of fourth accordion -->
+    <div class="accordion accordion-flush">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="covidaccordion">
+          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#accordion4">COVID19
+            Classifier</button>
+        </h2>
+        <div class="accordion-collapse collapse" id="accordion4">
+          <div class="accordion-body" id="covidbody">
+            <div class="row p-4">
+              <div class="col-sm-12 col-md ml-3">
+                <p class='mb-0'>This study aims to enable effective COVID19 CT-scan lung image classification by
+                  combining
+                  deep
+                  features with conventional handcrafted features to classify whether the patient is diagnosed with
+                  COVID19 or Pneumonia or normal lungs. In particular, the deep
+                  features
+                  are extracted from a pre-trained convolutional neural network model, namely the VGG19 model,
+                  at six different extraction levels. The deep features extracted at each level are analyzed using a
+                  features
+                  selection algorithm to identify the deep feature combination that achieves the highest classification
+                  performance.</p>
+                </p>
+              </div>
+              <div class="col-sm-12 col-md text-center">
+                <img src="images/" alt="Classifier">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of fourth accordion -->
+
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
